@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/book?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 731106
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  profiles:
+#    active: develop
+    active: dev
+  thymeleaf:
+    mode: HTML
+  mvc:
+    static-path-pattern: /**
+#logging:
+#  config: classpath:config/logback-custom.xml
+# application-{prod}.yml

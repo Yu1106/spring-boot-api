@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+#    context-path: /api
+logging:
+  level:
+    root: info
+    com.jacky: debug
+  file:
+    name: logs/my.log
+#    name: /Users/.../Desktop/my.log
+#    path: logs/
+#    path: /Users/.../Desktop/my.log
+#  config: classpath:logbak-test.xml
+#  pattern:
+#    console: '%d{HH:mm:ss.SSS}'
+
